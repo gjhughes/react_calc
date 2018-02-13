@@ -43,6 +43,7 @@ button {
     button {
       background-color: darkgrey;
     }
+    
     button:nth-child(1) {
       margin-left: 3px;
     }
@@ -72,14 +73,12 @@ button {
     }
   }
 
-
   .operator-keys {
     text-align: right;
 
     button {
       background-color: orange;
       color: #fff;
-
     }
   }
 
