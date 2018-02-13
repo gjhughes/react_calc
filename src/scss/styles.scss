@@ -1,0 +1,92 @@
+body,
+button {
+  font-family: -apple-system;
+}
+
+.calculator {
+  width: 372px;
+  height: 640px;
+  background-color: #000;
+  border-radius: 10px;
+
+  button {
+    font-size: 30px;
+  }
+
+  .calculator-display {
+    padding: 50px 15px 15px 15px;
+    text-align: right;
+    height: 75px;
+    color: #fff;
+    font-size: 100px
+  }
+
+  .calculator-key {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: none;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+
+  .key-0 {
+    width: 170px;
+    border-radius: 50px;
+  }
+
+  .input-keys {
+    text-align: center;
+  }
+
+  .function-keys {
+    button {
+      background-color: darkgrey;
+    }
+    button:nth-child(1) {
+      margin-left: 3px;
+    }
+
+    & button:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+
+  .digit-keys {
+    button {
+      background-color: #303030;
+      color: #fff;
+
+    }
+
+    button:nth-child(3n + 1) {
+      margin-left: 3px;
+    }
+
+    & button:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    & button:last-child {
+      margin-right: 0;
+    }
+  }
+
+
+  .operator-keys {
+    text-align: right;
+
+    button {
+      background-color: orange;
+      color: #fff;
+
+    }
+  }
+
+  .calculator-keypad {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+}
